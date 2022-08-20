@@ -1,0 +1,19 @@
+load("//:install.bzl", "install")
+
+alias(
+    name = "OPRF",
+    actual = "//OPRF:OPRF",
+    visibility = ["//visibility:public"],
+)
+
+
+install(
+    name = "install",
+    library = "//OPRF:OPRF",
+)
+
+install(
+    name = "uninstall",
+    library = "//OPRF:OPRF",
+    uninstall = True,
+)

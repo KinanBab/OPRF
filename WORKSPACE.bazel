@@ -1,0 +1,8 @@
+workspace(name = "OPRF")
+
+load("//:deps.bzl", "oprf_dependencies", "oprf_dev_dependencies")
+oprf_dependencies()
+oprf_dev_dependencies()
+
+load("//:loads.bzl", "oprf_load_dependencies")
+oprf_load_dependencies()
